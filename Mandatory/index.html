@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body id="app">
+    Message <input placeholder="Input something" v-model="word" /> How many
+    <input placeholder="Amount ofduplications" type="number" v-model="amount" />
+    <button class="button btn-primary" @click="duplicate">Do it!</button>
+    <p>{{ result }}</p>
+
+    <!-- Importerer JS fil -->
+    <script src="index.js"></script>
+
+    <!-- Mounter Vue app-->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>
